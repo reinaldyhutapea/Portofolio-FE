@@ -3,1876 +3,764 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reinaldy Hutapea - AI/ML Engineer & Full-Stack Developer</title>
-    <meta name="description" content="Reinaldy Hutapea - Information Systems Student specializing in AI/ML, Data Science, and Full-Stack Development. Currently studying at Institut Teknologi Del with experience at PT. Suzuki Finance Indonesia and PT. Indonesia AirAsia.">
-    <meta name="keywords" content="Reinaldy Hutapea, AI Engineer, Machine Learning, Data Science, Full Stack Developer, Information Systems, Institut Teknologi Del">
-    <meta name="author" content="Reinaldy Hutapea">
-    
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Reinaldy Hutapea - AI/ML Engineer & Full-Stack Developer">
-    <meta property="og:description" content="Information Systems Student specializing in AI/ML, Data Science, and Full-Stack Development">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://reinaldyhutapea.dev">
-    <meta property="og:image" content="/placeholder.svg?height=400&width=800">
-    
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Reinaldy Hutapea - AI/ML Engineer & Full-Stack Developer">
-    <meta name="twitter:description" content="Information Systems Student specializing in AI/ML, Data Science, and Full-Stack Development">
-    <meta name="twitter:image" content="/placeholder.svg?height=400&width=800">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="/placeholder.svg?height=32&width=32">
-    <link rel="apple-touch-icon" href="/placeholder.svg?height=180&width=180">
+    <title>Reinaldy Hutapea - Ultra Modern Portfolio</title>
+    <meta name="description" content="Information Systems student specializing in AI/ML, Data Science, and Full-Stack Development">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=SF+Pro+Display:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- AOS Animation Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
-    <!-- Custom Styles -->
+    <!-- Styles -->
     <link rel="stylesheet" href="style.css">
-    
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Reinaldy Hutapea",
-        "jobTitle": "Information Systems Student & AI/ML Engineer",
-        "description": "Information Systems Student specializing in AI/ML, Data Science, and Full-Stack Development",
-        "url": "https://reinaldyhutapea.dev",
-        "email": "reinaldyhutapea@gmail.com",
-        "telephone": "+62-822-4693-3771",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Toba",
-            "addressCountry": "Indonesia"
-        },
-        "alumniOf": {
-            "@type": "EducationalOrganization",
-            "name": "Institut Teknologi Del"
-        },
-        "knowsAbout": ["Artificial Intelligence", "Machine Learning", "Data Science", "Full-Stack Development", "Mobile Development", "Flutter", "Python", "Java", "PHP", "Laravel"]
-    }
-    </script>
 </head>
 <body>
-    <!-- Loading Screen -->
-    <!-- <div id="loadingScreen" class="loading-screen">
-        <div class="loading-container">
-            <div class="loading-logo">
-                <div class="logo-particles"></div>
-                <div class="logo-text">RH</div>
-                <div class="logo-ring"></div>
-            </div>
-            <div class="loading-text">Initializing portfolio...</div>
-            <div class="loading-progress">
-                <div id="progressBar" class="progress-bar" style="width: 0%"></div>
-                <div class="progress-glow"></div>
-            </div>
-            <div id="loadingPercentage" class="loading-percentage">0%</div>
-        </div>
-        <div class="loading-particles"></div>
-    </div> -->
+    <!-- Dynamic Background -->
+    <div class="dynamic-background">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+        <div class="gradient-orb orb-4"></div>
+        <div class="floating-particles"></div>
+    </div>
 
-    <!-- Theme Controls -->
-    <div class="theme-controls">
-        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
-            <div class="toggle-track">
-                <div class="toggle-thumb">
-                    <i class="fas fa-sun sun-icon"></i>
-                    <i class="fas fa-moon moon-icon"></i>
-                </div>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-container">
+            <div class="apple-logo">
+                <div class="logo-path"></div>
             </div>
-        </button>
+            <div class="loading-text">Initializing Portfolio</div>
+            <div class="loading-progress">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
     </div>
 
     <!-- Navigation -->
-    <nav id="mainNav" class="main-nav">
+    <nav class="main-nav" id="mainNav">
         <div class="nav-container">
             <div class="nav-logo">
-                <div class="logo-container">
-                    <div class="logo-icon">RH</div>
-                    <div class="logo-ripple"></div>
-                    <div class="logo-glow"></div>
-                </div>
-                <div class="logo-text">
-                    <span class="name">Reinaldy</span>
-                    <span class="surname">Hutapea</span>
-                </div>
+                <div class="logo-icon">Rey</div>
+                <div class="logo-ripple"></div>
             </div>
             
-            <div id="navMenu" class="nav-menu">
+            <div class="nav-menu" id="navMenu">
                 <a href="#home" class="nav-link active" data-section="home">
-                    <i class="fas fa-home nav-icon"></i>
-                    <div class="icon-glow"></div>
+                    <span class="nav-icon">🏠</span>
                     <span class="nav-text">Home</span>
                     <div class="nav-indicator"></div>
                 </a>
                 <a href="#about" class="nav-link" data-section="about">
-                    <i class="fas fa-user nav-icon"></i>
-                    <div class="icon-glow"></div>
+                    <span class="nav-icon">👨‍💻</span>
                     <span class="nav-text">About</span>
                     <div class="nav-indicator"></div>
                 </a>
-                <a href="#education" class="nav-link" data-section="education">
-                    <i class="fas fa-graduation-cap nav-icon"></i>
-                    <div class="icon-glow"></div>
-                    <span class="nav-text">Education</span>
-                    <div class="nav-indicator"></div>
-                </a>
                 <a href="#experience" class="nav-link" data-section="experience">
-                    <i class="fas fa-briefcase nav-icon"></i>
-                    <div class="icon-glow"></div>
+                    <span class="nav-icon">🚀</span>
                     <span class="nav-text">Experience</span>
                     <div class="nav-indicator"></div>
                 </a>
                 <a href="#projects" class="nav-link" data-section="projects">
-                    <i class="fas fa-code nav-icon"></i>
-                    <div class="icon-glow"></div>
+                    <span class="nav-icon">💼</span>
                     <span class="nav-text">Projects</span>
                     <div class="nav-indicator"></div>
                 </a>
                 <a href="#skills" class="nav-link" data-section="skills">
-                    <i class="fas fa-cogs nav-icon"></i>
-                    <div class="icon-glow"></div>
+                    <span class="nav-icon">⚡</span>
                     <span class="nav-text">Skills</span>
                     <div class="nav-indicator"></div>
                 </a>
-                <a href="#achievements" class="nav-link" data-section="achievements">
-                    <i class="fas fa-trophy nav-icon"></i>
-                    <div class="icon-glow"></div>
-                    <span class="nav-text">Achievements</span>
-                    <div class="nav-indicator"></div>
-                </a>
                 <a href="#contact" class="nav-link" data-section="contact">
-                    <i class="fas fa-envelope nav-icon"></i>
-                    <div class="icon-glow"></div>
+                    <span class="nav-icon">📧</span>
                     <span class="nav-text">Contact</span>
                     <div class="nav-indicator"></div>
                 </a>
             </div>
             
-            <div class="nav-actions">
-                <button onclick="downloadCV()" class="download-cv-btn">
-                    <i class="fas fa-download"></i>
-                    <span>Download CV</span>
-                    <div class="btn-ripple"></div>
-                    <div class="btn-glow"></div>
-                </button>
-                <button id="menuToggle" class="menu-toggle">
-                    <div class="hamburger-line"></div>
-                    <div class="hamburger-line"></div>
-                    <div class="hamburger-line"></div>
-                </button>
-            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
         </div>
     </nav>
 
-    <!-- Background Elements -->
-    <div class="background-elements">
-        <div class="floating-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="shape shape-3"></div>
-            <div class="shape shape-4"></div>
-            <div class="shape shape-5"></div>
-        </div>
-        <div class="gradient-orbs">
-            <div class="orb orb-1"></div>
-            <div class="orb orb-2"></div>
-            <div class="orb orb-3"></div>
-        </div>
-        <canvas class="particle-canvas"></canvas>
-    </div>
-
-    <!-- Main Content -->
-    <main class="main-content">
-        <!-- Hero Section -->
-        <section id="home" class="hero-section">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <div class="greeting-container">
-                            <span class="greeting">Hello, I'm</span>
-                            <span class="wave-emoji">👋</span>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-image-container">
+                    <div class="profile-card">
+                        <div class="card-glow"></div>
+                        <img src="/assets/Profil.jpg" alt="Reinaldy Hutapea" class="profile-image">
+                        <div class="image-overlay"></div>
+                        <div class="floating-elements">
+                            <div class="floating-dot dot-1"></div>
+                            <div class="floating-dot dot-2"></div>
+                            <div class="floating-dot dot-3"></div>
                         </div>
-                        
-                        <h1 class="hero-title">
-                            <span class="title-line">
-                                <span class="title-word" data-word="Reinaldy">Reinaldy</span>
-                                <span class="title-word" data-word="Hutapea">Hutapea</span>
-                            </span>
-                        </h1>
-                        
-                        <div class="role-container">
-                            <span class="role-prefix">I'm a</span>
-                            <span id="typingText" class="dynamic-role">Front End Developer</span>
-                            <span class="typing-cursor">|</span>
+                    </div>
+                </div>
+                
+                <div class="hero-text">
+                    <div class="greeting-container">
+                        <span class="greeting">Hello, I'm</span>
+                        <div class="wave-emoji">👋</div>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        <span class="title-word" data-word="Reinaldy">Reinaldy</span>
+                        <span class="title-word" data-word="Hutapea">Hutapea</span>
+                    </h1>
+                    
+                    <div class="role-container">
+                        <span class="role-prefix">I'm a</span>
+                        <span class="dynamic-role" id="dynamicRole">Information Systems Student</span>
+                        <div class="role-cursor">|</div>
+                    </div>
+                    
+                    <p class="hero-description">
+                        Passionate about <span class="highlight">Front-End Development</span>, 
+                        <span class="highlight">Machine Learning</span>, and 
+                        <span class="highlight">Full-Stack Development</span>. 
+                        Currently pursuing Information Systems at Del Institute of Technology.
+                    </p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon">🎓</div>
+                            <div class="stat-content">
+                                <div class="stat-number" data-target="3.51">0.00</div>
+                                <div class="stat-label">GPA</div>
+                            </div>
+                            <div class="stat-glow"></div>
                         </div>
-                        
-                        <p class="hero-description">
-                            Information Systems student at <span class="highlight">Institut Teknologi Del</span> 
-                            with a passion for <span class="highlight">AI/ML Engineering</span>, 
-                            <span class="highlight">Data Science</span>, and 
-                            <span class="highlight">Full-Stack Development</span>. 
-                            Currently gaining hands-on experience through internships at leading companies.
-                        </p>
-                        
-                        <div class="hero-stats">
-                            <div class="stat-item">
-                                <div class="stat-icon">🎓</div>
-                                <div class="stat-content">
-                                    <span class="stat-number" data-target="3.51">0</span>
-                                    <span class="stat-label">GPA</span>
-                                </div>
-                                <div class="stat-progress" data-progress="88"></div>
+                        <div class="stat-card">
+                            <div class="stat-icon">📊</div>
+                            <div class="stat-content">
+                                <div class="stat-number" data-target="6">0</div>
+                                <div class="stat-label">Projects</div>
                             </div>
-                            <div class="stat-item">
-                                <div class="stat-icon">💼</div>
-                                <div class="stat-content">
-                                    <span class="stat-number" data-target="3">0</span>
-                                    <span class="stat-label">Internships</span>
-                                </div>
-                                <div class="stat-progress" data-progress="100"></div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-icon">🚀</div>
-                                <div class="stat-content">
-                                    <span class="stat-number" data-target="5">0</span>
-                                    <span class="stat-label">Projects</span>
-                                </div>
-                                <div class="stat-progress" data-progress="95"></div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-icon">🏆</div>
-                                <div class="stat-content">
-                                    <span class="stat-number" data-target="2">0</span>
-                                    <span class="stat-label">Awards</span>
-                                </div>
-                                <div class="stat-progress" data-progress="90"></div>
-                            </div>
+                            <div class="stat-glow"></div>
                         </div>
-                        
-                        <div class="hero-actions">
-                            <a href="#contact" class="btn btn-primary">
-                                <span class="btn-text">Get In Touch</span>
-                                <i class="fas fa-arrow-right btn-icon"></i>
-                                <div class="btn-ripple"></div>
-                                <div class="btn-glow"></div>
-                            </a>
-                            <a href="#projects" class="btn btn-secondary">
-                                <span class="btn-text">View My Work</span>
-                                <i class="fas fa-eye btn-icon"></i>
-                                <div class="btn-ripple"></div>
-                            </a>
+                        <div class="stat-card">
+                            <div class="stat-icon">💼</div>
+                            <div class="stat-content">
+                                <div class="stat-number" data-target="2">0</div>
+                                <div class="stat-label">Years Exp</div>
+                            </div>
+                            <div class="stat-glow"></div>
                         </div>
-                        
-                        <div class="social-links">
-                            <a href="https://linkedin.com/in/reinaldy-hutapea" class="social-link linkedin" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-linkedin-in"></i>
-                                <div class="social-tooltip">LinkedIn</div>
-                            </a>
-                            <a href="https://github.com/reinaldy" class="social-link github" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-github"></i>
-                                <div class="social-tooltip">GitHub</div>
-                            </a>
-                            <a href="mailto:reinaldyhutapea@gmail.com" class="social-link email">
-                                <i class="fas fa-envelope"></i>
-                                <div class="social-tooltip">Email</div>
-                            </a>
-                            <a href="tel:+6282246933771" class="social-link phone">
-                                <i class="fas fa-phone"></i>
-                                <div class="social-tooltip">Phone</div>
-                            </a>
+                        <div class="stat-card">
+                            <div class="stat-icon">🎯</div>
+                            <div class="stat-content">
+                                <div class="stat-number" data-target="95">0</div>
+                                <div class="stat-label">% Accuracy</div>
+                            </div>
+                            <div class="stat-glow"></div>
                         </div>
                     </div>
                     
-                    <div class="hero-visual">
-                        <div class="profile-container">
-                            <div class="profile-card">
-                                <div class="card-glow"></div>
-                                <div class="profile-image-container">
-                                    <img src="/assets/profile.png" alt="Reinaldy Hutapea" class="profile-image">
-                                    <div class="image-overlay"></div>
-                                </div>
-                                <div class="status-indicator">
-                                    <div class="status-dot"></div>
-                                    <span>Available for opportunities</span>
-                                </div>
-                            </div>
-                            
-                            <div class="floating-icons">
-                                <div class="floating-icon icon-1">
-                                    <i class="fab fa-python"></i>
-                                </div>
-                                <div class="floating-icon icon-2">
-                                    <i class="fab fa-flutter"></i>
-                                </div>
-                                <div class="floating-icon icon-3">
-                                    <i class="fas fa-brain"></i>
-                                </div>
-                                <div class="floating-icon icon-4">
-                                    <i class="fas fa-database"></i>
-                                </div>
-                                <div class="floating-icon icon-5">
-                                    <i class="fab fa-react"></i>
-                                </div>
-                                <div class="floating-icon icon-6">
-                                    <i class="fab fa-laravel"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="scroll-indicator">
-                    <div class="scroll-text">Scroll Down</div>
-                    <div class="scroll-mouse">
-                        <div class="scroll-wheel"></div>
+                    <div class="cta-buttons">
+                        <button class="btn btn-primary" onclick="scrollToSection('projects')">
+                            <span class="btn-text">View My Work</span>
+                            <div class="btn-icon">🚀</div>
+                            <div class="btn-ripple"></div>
+                        </button>
+                        <button class="btn btn-secondary" onclick="scrollToSection('contact')">
+                            <span class="btn-text">Get In Touch</span>
+                            <div class="btn-icon">💬</div>
+                            <div class="btn-ripple"></div>
+                        </button>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="about-section">
-            <div class="container">
-                <div class="section-header">
-                    <div class="section-badge">
-                        <i class="fas fa-user-circle"></i>
-                        <span>About Me</span>
-                    </div>
-                    <h2 class="section-title">
-                        <span class="title-word">Passionate</span>
-                        <span class="title-word highlight">Developer</span>
-                        <span class="title-word">&</span>
-                        <span class="title-word">Innovator</span>
-                    </h2>
-                    <div class="section-subtitle-container">
-                        <div class="subtitle-line"></div>
-                        <p class="section-subtitle">
-                            Driven by curiosity and powered by technology, I'm on a mission to create 
-                            intelligent solutions that make a difference.
-                        </p>
-                        <div class="subtitle-line"></div>
-                    </div>
-                </div>
-                
-                <div class="about-content">
-                    <div class="about-grid">
-                        <div class="about-text">
-                            <div class="text-card">
-                                <div class="card-icon">
-                                    <i class="fas fa-user-graduate"></i>
-                                </div>
-                                <h3>Academic Excellence</h3>
-                                <p>
-                                    Currently pursuing Information Systems at Institut Teknologi Del 
-                                    with a GPA of 3.51/4.00. My academic journey focuses on the 
-                                    intersection of technology and business, preparing me for the 
-                                    digital transformation era.
-                                </p>
-                            </div>
-                            
-                            <div class="text-card">
-                                <div class="card-icon">
-                                    <i class="fas fa-rocket"></i>
-                                </div>
-                                <h3>Professional Growth</h3>
-                                <p>
-                                    Gained valuable industry experience through internships at 
-                                    PT. Suzuki Finance Indonesia as a Mobile Developer and 
-                                    PT. Indonesia AirAsia as a Machine Learning Engineer, 
-                                    applying theoretical knowledge to real-world challenges.
-                                </p>
-                            </div>
-                            
-                            <div class="text-card">
-                                <div class="card-icon">
-                                    <i class="fas fa-lightbulb"></i>
-                                </div>
-                                <h3>Innovation Mindset</h3>
-                                <p>
-                                    Passionate about leveraging AI/ML and data science to solve 
-                                    complex problems. I believe in the power of technology to 
-                                    transform industries and improve lives through intelligent 
-                                    automation and data-driven insights.
-                                </p>
-                            </div>
-                        </div>
-                        
-                        <div class="about-visual">
-                            <div class="skills-preview">
-                                <div class="skill-orbit">
-                                    <div class="skill-planet planet-1">
-                                        <i class="fab fa-python"></i>
-                                        <span>Python</span>
-                                    </div>
-                                    <div class="skill-planet planet-2">
-                                        <i class="fas fa-brain"></i>
-                                        <span>AI/ML</span>
-                                    </div>
-                                    <div class="skill-planet planet-3">
-                                        <i class="fab fa-flutter"></i>
-                                        <span>Flutter</span>
-                                    </div>
-                                    <div class="skill-planet planet-4">
-                                        <i class="fas fa-database"></i>
-                                        <span>Data</span>
-                                    </div>
-                                </div>
-                                <div class="skill-center">
-                                    <i class="fas fa-code"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="specializations">
-                        <h3 class="specializations-title">My Specializations</h3>
-                        <div class="specialization-cards">
-                            <div class="spec-card">
-                                <div class="spec-icon">
-                                    <i class="fas fa-brain"></i>
-                                </div>
-                                <h4>AI/ML Engineering</h4>
-                                <p>
-                                    Developing intelligent systems using machine learning algorithms, 
-                                    neural networks, and deep learning frameworks to solve complex problems.
-                                </p>
-                                <div class="spec-glow"></div>
-                            </div>
-                            
-                            <div class="spec-card">
-                                <div class="spec-icon">
-                                    <i class="fas fa-chart-line"></i>
-                                </div>
-                                <h4>Data Science</h4>
-                                <p>
-                                    Extracting insights from data through statistical analysis, 
-                                    visualization, and predictive modeling to drive business decisions.
-                                </p>
-                                <div class="spec-glow"></div>
-                            </div>
-                            
-                            <div class="spec-card">
-                                <div class="spec-icon">
-                                    <i class="fas fa-code"></i>
-                                </div>
-                                <h4>Full-Stack Development</h4>
-                                <p>
-                                    Building end-to-end applications with modern frameworks, 
-                                    from responsive frontends to scalable backend systems.
-                                </p>
-                                <div class="spec-glow"></div>
-                            </div>
-                            
-                            <div class="spec-card">
-                                <div class="spec-icon">
-                                    <i class="fas fa-mobile-alt"></i>
-                                </div>
-                                <h4>Mobile Development</h4>
-                                <p>
-                                    Creating cross-platform mobile applications using Flutter 
-                                    and Dart for seamless user experiences across devices.
-                                </p>
-                                <div class="spec-glow"></div>
-                            </div>
-                        </div>
-                    </div>
+            
+            <div class="scroll-indicator">
+                <div class="scroll-text">Scroll to explore</div>
+                <div class="scroll-mouse">
+                    <div class="scroll-wheel"></div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Education Section -->
-        <section id="education" class="education-section">
-            <div class="container">
-                <div class="section-header">
-                    <div class="section-badge">
-                        <i class="fas fa-graduation-cap"></i>
-                        <span>Education</span>
-                    </div>
-                    <h2 class="section-title">
-                        <span class="title-word">Academic</span>
-                        <span class="title-word highlight">Journey</span>
-                    </h2>
-                    <div class="section-subtitle-container">
-                        <div class="subtitle-decoration">
-                            <div class="decoration-dot"></div>
-                            <div class="decoration-line"></div>
-                            <div class="decoration-dot"></div>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Passionate learner and problem solver</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-cards">
+                    <div class="about-card card-1">
+                        <div class="card-header">
+                            <div class="card-icon">🎓</div>
+                            <h3>Education</h3>
                         </div>
-                        <p class="section-subtitle">
-                            Building a strong foundation in Information Systems and Computer Science
-                        </p>
-                        <div class="subtitle-decoration">
-                            <div class="decoration-dot"></div>
-                            <div class="decoration-line"></div>
-                            <div class="decoration-dot"></div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="education-content">
-                    <div class="education-card">
-                        <div class="education-header">
-                            <div class="university-logo">
-                                <i class="fas fa-university"></i>
-                            </div>
-                            <div class="education-info">
-                                <h3>Institut Teknologi Del</h3>
-                                <h4>Bachelor of Information Systems</h4>
-                                <div class="duration">August 2022 - September 2026</div>
-                                <div class="location">Toba, North Sumatra, Indonesia</div>
-                            </div>
+                        <div class="card-content">
+                            <p>Information Systems at Del Institute of Technology</p>
                             <div class="gpa-display">
                                 <span class="gpa-number">3.51</span>
                                 <span class="gpa-scale">/4.00</span>
-                                <div class="gpa-progress">
-                                    <div class="gpa-fill" style="width: 88%"></div>
-                                </div>
                             </div>
                         </div>
-                        
-                        <div class="education-details">
-                            <h5>Relevant Coursework</h5>
-                            <div class="coursework-grid">
-                                <div class="course-item">
-                                    <i class="fas fa-code"></i>
-                                    <span>Object-Oriented Programming</span>
-                                </div>
-                                <div class="course-item">
-                                    <i class="fas fa-cogs"></i>
-                                    <span>Software Engineering</span>
-                                </div>
-                                <div class="course-item">
-                                    <i class="fas fa-chart-bar"></i>
-                                    <span>Systems Analysis & Design</span>
-                                </div>
-                                <div class="course-item">
-                                    <i class="fas fa-database"></i>
-                                    <span>Database Design & Management</span>
-                                </div>
-                                <div class="course-item">
-                                    <i class="fas fa-palette"></i>
-                                    <span>UI/UX Design</span>
-                                </div>
-                                <div class="course-item">
-                                    <i class="fas fa-globe"></i>
-                                    <span>Web Development</span>
-                                </div>
-                                <div class="course-item">
-                                    <i class="fas fa-mobile-alt"></i>
-                                    <span>Mobile Application Development</span>
-                                </div>
-                                <div class="course-item">
-                                    <i class="fas fa-brain"></i>
-                                    <span>Artificial Intelligence</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="education-glow"></div>
+                        <div class="card-glow"></div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Experience Section -->
-        <section id="experience" class="experience-section">
-            <div class="container">
-                <div class="section-header">
-                    <div class="section-badge">
-                        <i class="fas fa-briefcase"></i>
-                        <span>Experience</span>
+                    
+                    <div class="about-card card-2">
+                        <div class="card-header">
+                            <div class="card-icon">💼</div>
+                            <h3>Experience</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>ML Engineer at PT. Indonesia AirAsia</p>
+                            <p>Mobile Developer at PT. Suzuki Finance</p>
+                        </div>
+                        <div class="card-glow"></div>
                     </div>
-                    <h2 class="section-title">
-                        <span class="title-word">Professional</span>
-                        <span class="title-word highlight">Journey</span>
-                    </h2>
-                    <div class="section-subtitle-container">
-                        <div class="subtitle-sparkle">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+                    
+                    <div class="about-card card-3">
+                        <div class="card-header">
+                            <div class="card-icon">🏆</div>
+                            <h3>Leadership</h3>
                         </div>
-                        <p class="section-subtitle">
-                            Gaining hands-on experience through internships and leadership roles
-                        </p>
-                        <div class="subtitle-sparkle">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+                        <div class="card-content">
+                            <p>Head of Science & Technology Department</p>
+                            <p>Organizing seminars for 500+ students</p>
                         </div>
+                        <div class="card-glow"></div>
                     </div>
                 </div>
                 
-                <div class="timeline-container">
-                    <div class="timeline-line"></div>
-                    
-                    <!-- Current/Recent Experience -->
-                    <div class="timeline-item timeline-left">
-                        <div class="timeline-marker">
-                            <div class="marker-dot"></div>
-                            <div class="marker-ring"></div>
-                        </div>
-                        <div class="timeline-card current">
-                            <div class="card-header">
-                                <div class="company-logo">
-                                    <i class="fas fa-car"></i>
-                                </div>
-                                <div class="job-info">
-                                    <h3>Mobile Developer Intern</h3>
-                                    <h4>PT. Suzuki Finance Indonesia</h4>
-                                    <div class="job-details">
-                                        <div class="duration">June 2025 - August 2025</div>
-                                        <div class="location">Jakarta, Indonesia</div>
-                                    </div>
-                                </div>
-                                <div class="status-badge current">Current</div>
-                            </div>
-                            
-                            <div class="card-content">
-                                <div class="job-description">
-                                    <p>
-                                        Developing mobile applications for Suzuki Finance's digital transformation 
-                                        initiative, focusing on customer-facing solutions and internal tools to 
-                                        streamline financial processes.
-                                    </p>
-                                </div>
-                                
-                                <div class="impact-metrics">
-                                    <div class="metric">
-                                        <span class="metric-value">3</span>
-                                        <span class="metric-label">Apps Developed</span>
-                                    </div>
-                                    <div class="metric">
-                                        <span class="metric-value">95%</span>
-                                        <span class="metric-label">Performance Score</span>
-                                    </div>
-                                    <div class="metric">
-                                        <span class="metric-value">2</span>
-                                        <span class="metric-label">Months Duration</span>
-                                    </div>
-                                </div>
-                                
-                                <div class="achievements-list">
-                                    <div class="achievement-item">
-                                        <i class="fas fa-check-circle"></i>
-                                        <span>Built cross-platform mobile apps using Flutter and Dart</span>
-                                    </div>
-                                    <div class="achievement-item">
-                                        <i class="fas fa-check-circle"></i>
-                                        <span>Implemented secure authentication and payment integration</span>
-                                    </div>
-                                    <div class="achievement-item">
-                                        <i class="fas fa-check-circle"></i>
-                                        <span>Collaborated with UI/UX team to enhance user experience</span>
-                                    </div>
-                                </div>
-                                
-                                <div class="tech-stack">
-                                    <span class="tech-tag flutter">Flutter</span>
-                                    <span class="tech-tag dart">Dart</span>
-                                    <span class="tech-tag">Firebase</span>
-                                    <span class="tech-tag">REST API</span>
-                                    <span class="tech-tag">Git</span>
-                                </div>
-                            </div>
-                            <div class="card-glow"></div>
-                        </div>
-                    </div>
-                    
-                    <!-- Previous Experience -->
-                    <div class="timeline-item timeline-right">
-                        <div class="timeline-marker">
-                            <div class="marker-dot"></div>
-                            <div class="marker-ring"></div>
-                        </div>
-                        <div class="timeline-card featured">
-                            <div class="card-header">
-                                <div class="company-logo">
-                                    <i class="fas fa-plane"></i>
-                                </div>
-                                <div class="job-info">
-                                    <h3>Machine Learning Engineer Intern</h3>
-                                    <h4>PT. Indonesia AirAsia</h4>
-                                    <div class="job-details">
-                                        <div class="duration">August 2024 - January 2025</div>
-                                        <div class="location">Jakarta, Indonesia</div>
-                                    </div>
-                                </div>
-                                <div class="status-badge completed">Completed</div>
-                            </div>
-                            
-                            <div class="card-content">
-                                <div class="job-description">
-                                    <p>
-                                        Developed machine learning models for predictive analytics in airline operations, 
-                                        focusing on customer behavior analysis, demand forecasting, and operational optimization 
-                                        to enhance business efficiency and customer satisfaction.
-                                    </p>
-                                </div>
-                                
-                                <div class="impact-metrics">
-                                    <div class="metric">
-                                        <span class="metric-value">4</span>
-                                        <span class="metric-label">ML Models</span>
-                                    </div>
-                                    <div class="metric">
-                                        <span class="metric-value">87%</span>
-                                        <span class="metric-label">Accuracy Rate</span>
-                                    </div>
-                                    <div class="metric">
-                                        <span class="metric-value">6</span>
-                                        <span class="metric-label">Months Duration</span>
-                                    </div>
-                                </div>
-                                
-                                <div class="achievements-list">
-                                    <div class="achievement-item">
-                                        <i class="fas fa-check-circle"></i>
-                                        <span>Developed customer segmentation models using clustering algorithms</span>
-                                    </div>
-                                    <div class="achievement-item">
-                                        <i class="fas fa-check-circle"></i>
-                                        <span>Built demand forecasting system with 87% accuracy</span>
-                                    </div>
-                                    <div class="achievement-item">
-                                        <i class="fas fa-check-circle"></i>
-                                        <span>Implemented real-time data processing pipelines</span>
-                                    </div>
-                                </div>
-                                
-                                <div class="tech-stack">
-                                    <span class="tech-tag python">Python</span>
-                                    <span class="tech-tag">TensorFlow</span>
-                                    <span class="tech-tag">Scikit-learn</span>
-                                    <span class="tech-tag">Pandas</span>
-                                    <span class="tech-tag">SQL</span>
-                                </div>
-                            </div>
-                            <div class="card-glow"></div>
-                        </div>
-                    </div>
-                    
-                    <!-- Academic Experience -->
-                    <div class="timeline-item timeline-left">
-                        <div class="timeline-marker">
-                            <div class="marker-dot"></div>
-                            <div class="marker-ring"></div>
-                        </div>
-                        <div class="timeline-card">
-                            <div class="card-header">
-                                <div class="company-logo">
-                                    <i class="fas fa-university"></i>
-                                </div>
-                                <div class="job-info">
-                                    <h3>Assistant Lecturer</h3>
-                                    <h4>Institut Teknologi Del</h4>
-                                    <div class="job-details">
-                                        <div class="duration">January 2024 - June 2024</div>
-                                        <div class="location">Toba, North Sumatra</div>
-                                    </div>
-                                </div>
-                                <div class="status-badge completed">Completed</div>
-                            </div>
-                            
-                            <div class="card-content">
-                                <div class="job-description">
-                                    <p>
-                                        Assisted in teaching programming courses and mentored junior students 
-                                        in software development fundamentals, helping them build strong 
-                                        foundations in computer science and programming concepts.
-                                    </p>
-                                </div>
-                                
-                                <div class="impact-metrics">
-                                    <div class="metric">
-                                        <span class="metric-value">50+</span>
-                                        <span class="metric-label">Students Mentored</span>
-                                    </div>
-                                    <div class="metric">
-                                        <span class="metric-value">3</span>
-                                        <span class="metric-label">Courses Assisted</span>
-                                    </div>
-                                    <div class="metric">
-                                        <span class="metric-value">6</span>
-                                        <span class="metric-label">Months Duration</span>
-                                    </div>
-                                </div>
-                                
-                                <div class="achievements-list">
-                                    <div class="achievement-item">
-                                        <i class="fas fa-check-circle"></i>
-                                        <span>Conducted programming labs and tutorials</span>
-                                    </div>
-                                    <div class="achievement-item">
-                                        <i class="fas fa-check-circle"></i>
-                                        <span>Mentored students in software development projects</span>
-                                    </div>
-                                    <div class="achievement-item">
-                                        <i class="fas fa-check-circle"></i>
-                                        <span>Developed educational materials and assignments</span>
-                                    </div>
-                                </div>
-                                
-                                <div class="tech-stack">
-                                    <span class="tech-tag">Java</span>
-                                    <span class="tech-tag">Python</span>
-                                    <span class="tech-tag">C++</span>
-                                    <span class="tech-tag">Teaching</span>
-                                    <span class="tech-tag">Mentoring</span>
-                                </div>
-                            </div>
-                            <div class="card-glow"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="projects-section">
-            <div class="container">
-                <div class="section-header">
-                    <div class="section-badge">
-                        <i class="fas fa-code"></i>
-                        <span>Projects</span>
-                    </div>
-                    <h2 class="section-title">
-                        <span class="title-word">Featured</span>
-                        <span class="title-word highlight">Projects</span>
-                    </h2>
-                    <div class="section-subtitle-container">
-                        <div class="subtitle-hexagon">
-                            <div class="hexagon"></div>
-                            <div class="hexagon"></div>
-                            <div class="hexagon"></div>
-                        </div>
-                        <p class="section-subtitle">
-                            A showcase of my technical skills and problem-solving abilities
-                        </p>
-                        <div class="subtitle-hexagon">
-                            <div class="hexagon"></div>
-                            <div class="hexagon"></div>
-                            <div class="hexagon"></div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="projects-grid">
-                    <!-- Featured Project -->
-                    <div class="project-card featured">
-                        <div class="project-image">
-                            <img src="/placeholder.svg?height=350&width=600" alt="Deltizen Corner System">
-                            <div class="image-overlay">
-                                <div class="overlay-content">
-                                    <i class="fas fa-external-link-alt"></i>
-                                    <span>View Project</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <div class="project-header">
-                                <div class="project-icon">
-                                    <i class="fas fa-shopping-cart"></i>
-                                </div>
-                                <div class="project-category">Web Application</div>
-                                <div class="project-status">Completed</div>
-                            </div>
-                            <h3>Website Sistem Informasi Pemesanan Online Deltizen Corner</h3>
+                <div class="about-story">
+                    <div class="story-card">
+                        <div class="story-content">
+                            <h3>My Journey</h3>
                             <p>
-                                Comprehensive e-commerce platform for Deltizen Corner featuring online ordering system, 
-                                inventory management, and customer relationship management. Built with modern web technologies 
-                                to provide seamless shopping experience.
+                                I'm an Information Systems student at Del Institute of Technology with a deep passion for technology and innovation. 
+                                My journey in tech started with curiosity about how data can drive meaningful insights and has evolved into 
+                                expertise in machine learning, computer vision, and full-stack development.
+                            </p>
+                            <p>
+                                Throughout my academic and professional journey, I've had the opportunity to work on impactful projects, 
+                                from developing computer vision systems that achieved 95% accuracy to creating comprehensive business 
+                                intelligence dashboards.
                             </p>
                             
-                            <div class="project-highlights">
-                                <div class="highlight">Full-Stack</div>
-                                <div class="highlight">E-commerce</div>
-                                <div class="highlight">Real-time</div>
+                            <div class="interests-tags">
+                                <span class="interest-tag">Machine Learning</span>
+                                <span class="interest-tag">Computer Vision</span>
+                                <span class="interest-tag">Data Science</span>
+                                <span class="interest-tag">Full-Stack Development</span>
+                                <span class="interest-tag">Mobile Development</span>
+                                <span class="interest-tag">Business Intelligence</span>
                             </div>
-                            
-                            <div class="project-features">
-                                <div class="feature">
-                                    <i class="fas fa-shopping-cart"></i>
-                                    <span>Online Ordering</span>
-                                </div>
-                                <div class="feature">
-                                    <i class="fas fa-boxes"></i>
-                                    <span>Inventory Management</span>
-                                </div>
-                                <div class="feature">
-                                    <i class="fas fa-users"></i>
-                                    <span>Customer Management</span>
-                                </div>
-                                <div class="feature">
-                                    <i class="fas fa-chart-bar"></i>
-                                    <span>Analytics Dashboard</span>
-                                </div>
+                        </div>
+                        <div class="story-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience</h2>
+                <p class="section-subtitle">Professional journey and growth</p>
+            </div>
+            
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+                
+                <div class="timeline-item" data-year="2025">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-ring"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="card-header">
+                            <div class="company-logo">📱</div>
+                            <div class="job-info">
+                                <h3>Mobile Developer Intern</h3>
+                                <h4>PT. Suzuki Finance Indonesia</h4>
+                                <span class="duration">Jun 2025 - Aug 2025</span>
                             </div>
-                            
-                            <div class="project-tech">
+                        </div>
+                        <div class="card-content">
+                            <p>Leading development of SMILE module in SUFI ONE project using Flutter and Dart.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag flutter">Flutter</span>
+                                <span class="tech-tag dart">Dart</span>
                                 <span class="tech-tag laravel">Laravel</span>
-                                <span class="tech-tag">PHP</span>
-                                <span class="tech-tag">MySQL</span>
-                                <span class="tech-tag">JavaScript</span>
-                                <span class="tech-tag">Bootstrap</span>
-                            </div>
-                            
-                            <div class="project-actions">
-                                <a href="#" class="project-btn primary">
-                                    <i class="fas fa-external-link-alt"></i>
-                                    <span>Live Demo</span>
-                                </a>
-                                <a href="#" class="project-btn secondary">
-                                    <i class="fab fa-github"></i>
-                                    <span>Source Code</span>
-                                </a>
+                                <span class="tech-tag php">PHP</span>
                             </div>
                         </div>
-                        <div class="project-glow"></div>
-                    </div>
-                    
-                    <!-- ML Project -->
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="/placeholder.svg?height=250&width=400" alt="Mental Health Prediction">
-                            <div class="image-overlay">
-                                <div class="overlay-content">
-                                    <i class="fas fa-external-link-alt"></i>
-                                    <span>View Project</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <div class="project-header">
-                                <div class="project-icon">
-                                    <i class="fas fa-brain"></i>
-                                </div>
-                                <div class="project-category">Machine Learning</div>
-                                <div class="project-status">Completed</div>
-                            </div>
-                            <h3>Mental Health Prediction Using Machine Learning</h3>
-                            <p>
-                                Advanced ML model for predicting mental health conditions using various algorithms 
-                                and data preprocessing techniques to achieve high accuracy in classification.
-                            </p>
-                            
-                            <div class="project-metrics">
-                                <div class="metric">
-                                    <span class="metric-value">92%</span>
-                                    <span class="metric-label">Accuracy</span>
-                                </div>
-                                <div class="metric">
-                                    <span class="metric-value">5</span>
-                                    <span class="metric-label">Algorithms</span>
-                                </div>
-                                <div class="metric">
-                                    <span class="metric-value">10K+</span>
-                                    <span class="metric-label">Data Points</span>
-                                </div>
-                            </div>
-                            
-                            <div class="project-tech">
-                                <span class="tech-tag python">Python</span>
-                                <span class="tech-tag">Scikit-learn</span>
-                                <span class="tech-tag">Pandas</span>
-                                <span class="tech-tag">Matplotlib</span>
-                            </div>
-                            
-                            <div class="project-actions">
-                                <a href="#" class="project-btn primary">
-                                    <i class="fas fa-external-link-alt"></i>
-                                    <span>View Details</span>
-                                </a>
-                                <a href="#" class="project-btn secondary">
-                                    <i class="fab fa-github"></i>
-                                    <span>GitHub</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="project-glow"></div>
-                    </div>
-                    
-                    <!-- Dashboard Project -->
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="/placeholder.svg?height=250&width=400" alt="IT Del Dashboard">
-                            <div class="image-overlay">
-                                <div class="overlay-content">
-                                    <i class="fas fa-external-link-alt"></i>
-                                    <span>View Project</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <div class="project-header">
-                                <div class="project-icon">
-                                    <i class="fas fa-chart-line"></i>
-                                </div>
-                                <div class="project-category">Data Visualization</div>
-                                <div class="project-status">Completed</div>
-                            </div>
-                            <h3>Dashboard Interaktif Visualisasi Tren Penerimaan Mahasiswa IT Del</h3>
-                            <p>
-                                Interactive dashboard for visualizing student admission trends at Institut Teknologi Del, 
-                                providing insights for academic planning and decision-making.
-                            </p>
-                            
-                            <div class="project-tech">
-                                <span class="tech-tag">Tableau</span>
-                                <span class="tech-tag">SQL</span>
-                                <span class="tech-tag">Excel</span>
-                                <span class="tech-tag">Data Analysis</span>
-                            </div>
-                            
-                            <div class="project-actions">
-                                <a href="#" class="project-btn primary">
-                                    <i class="fas fa-external-link-alt"></i>
-                                    <span>View Dashboard</span>
-                                </a>
-                                <a href="#" class="project-btn secondary">
-                                    <i class="fas fa-file-alt"></i>
-                                    <span>Report</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="project-glow"></div>
-                    </div>
-                    
-                    <!-- Sentiment Analysis Project -->
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="/placeholder.svg?height=250&width=400" alt="Sentiment Analysis">
-                            <div class="image-overlay">
-                                <div class="overlay-content">
-                                    <i class="fas fa-external-link-alt"></i>
-                                    <span>View Project</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <div class="project-header">
-                                <div class="project-icon">
-                                    <i class="fas fa-comments"></i>
-                                </div>
-                                <div class="project-category">NLP</div>
-                                <div class="project-status">Completed</div>
-                            </div>
-                            <h3>Sentiment Analysis Using E-WOM Method</h3>
-                            <p>
-                                Natural Language Processing project analyzing electronic word-of-mouth data 
-                                to determine sentiment patterns and customer opinions.
-                            </p>
-                            
-                            <div class="project-tech">
-                                <span class="tech-tag python">Python</span>
-                                <span class="tech-tag">NLTK</span>
-                                <span class="tech-tag">TextBlob</span>
-                                <span class="tech-tag">Pandas</span>
-                            </div>
-                            
-                            <div class="project-actions">
-                                <a href="#" class="project-btn primary">
-                                    <i class="fas fa-external-link-alt"></i>
-                                    <span>View Analysis</span>
-                                </a>
-                                <a href="#" class="project-btn secondary">
-                                    <i class="fab fa-github"></i>
-                                    <span>Code</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="project-glow"></div>
-                    </div>
-                    
-                    <!-- Netflix Dashboard -->
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="/placeholder.svg?height=250&width=400" alt="Netflix Dashboard">
-                            <div class="image-overlay">
-                                <div class="overlay-content">
-                                    <i class="fas fa-external-link-alt"></i>
-                                    <span>View Project</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <div class="project-header">
-                                <div class="project-icon">
-                                    <i class="fas fa-tv"></i>
-                                </div>
-                                <div class="project-category">Business Intelligence</div>
-                                <div class="project-status">Completed</div>
-                            </div>
-                            <h3>Netflix Dashboard Using Tableau</h3>
-                            <p>
-                                Comprehensive business intelligence dashboard analyzing Netflix content data, 
-                                viewing patterns, and market trends for strategic insights.
-                            </p>
-                            
-                            <div class="project-tech">
-                                <span class="tech-tag">Tableau</span>
-                                <span class="tech-tag">Data Visualization</span>
-                                <span class="tech-tag">Business Intelligence</span>
-                                <span class="tech-tag">Analytics</span>
-                            </div>
-                            
-                            <div class="project-actions">
-                                <a href="#" class="project-btn primary">
-                                    <i class="fas fa-external-link-alt"></i>
-                                    <span>View Dashboard</span>
-                                </a>
-                                <a href="#" class="project-btn secondary">
-                                    <i class="fas fa-download"></i>
-                                    <span>Download</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="project-glow"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="skills-section">
-            <div class="container">
-                <div class="section-header">
-                    <div class="section-badge">
-                        <i class="fas fa-cogs"></i>
-                        <span>Skills</span>
-                    </div>
-                    <h2 class="section-title">
-                        <span class="title-word">Technical</span>
-                        <span class="title-word highlight">Expertise</span>
-                    </h2>
-                    <div class="section-subtitle-container">
-                        <div class="subtitle-circuit">
-                            <div class="circuit-line"></div>
-                            <div class="circuit-node"></div>
-                            <div class="circuit-line"></div>
-                        </div>
-                        <p class="section-subtitle">
-                            A comprehensive overview of my technical skills and proficiency levels
-                        </p>
-                        <div class="subtitle-circuit">
-                            <div class="circuit-line"></div>
-                            <div class="circuit-node"></div>
-                            <div class="circuit-line"></div>
-                        </div>
+                        <div class="card-glow"></div>
                     </div>
                 </div>
                 
-                <div class="skills-container">
+                <div class="timeline-item" data-year="2024">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-ring"></div>
+                    </div>
+                    <div class="timeline-card featured">
+                        <div class="card-header">
+                            <div class="company-logo">🧠</div>
+                            <div class="job-info">
+                                <h3>Machine Learning Engineer Intern</h3>
+                                <h4>PT. Indonesia AirAsia</h4>
+                                <span class="duration">Aug 2024 - Jan 2025</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p>Developed advanced computer vision system for automated invoice processing.</p>
+                            <div class="achievements">
+                                <div class="achievement">
+                                    <span class="achievement-number">95%</span>
+                                    <span class="achievement-label">Accuracy</span>
+                                </div>
+                                <div class="achievement">
+                                    <span class="achievement-number">78%</span>
+                                    <span class="achievement-label">Time Reduction</span>
+                                </div>
+                                <div class="achievement">
+                                    <span class="achievement-number">10K+</span>
+                                    <span class="achievement-label">Monthly Processing</span>
+                                </div>
+                            </div>
+                            <div class="tech-stack">
+                                <span class="tech-tag python">Python</span>
+                                <span class="tech-tag opencv">OpenCV</span>
+                                <span class="tech-tag paddle">PaddleOCR</span>
+                                <span class="tech-tag streamlit">Streamlit</span>
+                            </div>
+                        </div>
+                        <div class="card-glow"></div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-year="2025">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-ring"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="card-header">
+                            <div class="company-logo">💻</div>
+                            <div class="job-info">
+                                <h3>Information System Developer</h3>
+                                <h4>Deltizen Corner</h4>
+                                <span class="duration">Jan 2025 - May 2025</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p>Architected web-based ordering and payment system with QRIS integration.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag web">Web Development</span>
+                                <span class="tech-tag payment">QRIS Payment</span>
+                                <span class="tech-tag realtime">Real-time System</span>
+                            </div>
+                        </div>
+                        <div class="card-glow"></div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-year="2023">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-ring"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="card-header">
+                            <div class="company-logo">🎓</div>
+                            <div class="job-info">
+                                <h3>Head of Science & Technology Dept.</h3>
+                                <h4>Del Institute of Technology</h4>
+                                <span class="duration">2023 - Present</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p>Leading technological initiatives and organizing seminars for 500+ students.</p>
+                            <div class="achievements">
+                                <div class="achievement">
+                                    <span class="achievement-number">500+</span>
+                                    <span class="achievement-label">Students</span>
+                                </div>
+                                <div class="achievement">
+                                    <span class="achievement-number">20+</span>
+                                    <span class="achievement-label">Seminars</span>
+                                </div>
+                                <div class="achievement">
+                                    <span class="achievement-number">50+</span>
+                                    <span class="achievement-label">Mentored</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Building solutions that make a difference</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card featured-project">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg" alt="OCR System">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="project-icon">👁️</div>
+                            <div class="project-category">Computer Vision • AI/ML</div>
+                        </div>
+                        <h3>OCR for Fuel Reconciliation</h3>
+                        <p>Advanced computer vision system leveraging PaddleOCR and OpenCV for automated invoice processing.</p>
+                        
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">95%</span>
+                                <span class="metric-label">Accuracy</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">78%</span>
+                                <span class="metric-label">Time Reduction</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">10K+</span>
+                                <span class="metric-label">Monthly Processing</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-tech">
+                            <span class="tech-tag python">Python</span>
+                            <span class="tech-tag opencv">OpenCV</span>
+                            <span class="tech-tag paddle">PaddleOCR</span>
+                            <span class="tech-tag streamlit">Streamlit</span>
+                        </div>
+                    </div>
+                    <div class="project-glow"></div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/assets/Tableau.png" alt="BI Dashboard">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="project-icon">📊</div>
+                            <div class="project-category">Business Intelligence</div>
+                        </div>
+                        <h3>DWBI Interactive Dashboard</h3>
+                        <p>Comprehensive BI dashboard for student admission analysis with real-time insights.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag tableau">Tableau</span>
+                            <span class="tech-tag python">Excel</span>
+                            <span class="tech-tag sql">SQL</span>
+                        </div>
+                    </div>
+                    <div class="project-glow"></div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/assets/Data-Mining.png" alt="Mental Health ML">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="project-icon">🧠</div>
+                            <div class="project-category">Machine Learning</div>
+                        </div>
+                        <h3>Mental Health Prediction ML</h3>
+                        <p>ML model for depression risk prediction using ensemble methods, achieving 93.90% accuracy.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag python">Python</span>
+                            <span class="tech-tag sklearn">Scikit-learn</span>
+                            <span class="tech-tag pandas">Pandas</span>
+                        </div>
+                    </div>
+                    <div class="project-glow"></div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg" alt="Mobile App">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="project-icon">📱</div>
+                            <div class="project-category">Mobile Development</div>
+                        </div>
+                        <h3>SUFI ONE Mobile App</h3>
+                        <p>Cross-platform mobile application with clean architecture and intuitive UX.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag flutter">Flutter</span>
+                            <span class="tech-tag dart">Dart</span>
+                            <span class="tech-tag firebase">Firebase</span>
+                        </div>
+                    </div>
+                    <div class="project-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <p class="section-subtitle">Tools and technologies I work with</p>
+            </div>
+            
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
                     <div class="skills-grid">
-                        <!-- Programming Languages -->
-                        <div class="skill-category">
-                            <div class="category-header">
-                                <div class="category-icon">
-                                    <i class="fas fa-code"></i>
-                                </div>
-                                <h3>Programming Languages</h3>
-                            </div>
-                            <div class="skills-list">
-                                <div class="skill-item">
-                                    <div class="skill-icon">🐍</div>
-                                    <div class="skill-info">
-                                        <h4>Python</h4>
-                                        <div class="skill-level">
-                                            <div class="level-bar">
-                                                <div class="level-fill" data-level="90"></div>
-                                            </div>
-                                            <span class="level-text">90%</span>
-                                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🐍</div>
+                            <div class="skill-info">
+                                <h4>Python</h4>
+                                <div class="skill-level">
+                                    <div class="level-bar">
+                                        <div class="level-fill" data-level="80"></div>
                                     </div>
-                                </div>
-                                <div class="skill-item">
-                                    <div class="skill-icon">☕</div>
-                                    <div class="skill-info">
-                                        <h4>Java</h4>
-                                        <div class="skill-level">
-                                            <div class="level-bar">
-                                                <div class="level-fill" data-level="85"></div>
-                                            </div>
-                                            <span class="level-text">85%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <div class="skill-icon">🐘</div>
-                                    <div class="skill-info">
-                                        <h4>PHP</h4>
-                                        <div class="skill-level">
-                                            <div class="level-bar">
-                                                <div class="level-fill" data-level="80"></div>
-                                            </div>
-                                            <span class="level-text">80%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <div class="skill-icon">🎯</div>
-                                    <div class="skill-info">
-                                        <h4>Dart</h4>
-                                        <div class="skill-level">
-                                            <div class="level-bar">
-                                                <div class="level-fill" data-level="85"></div>
-                                            </div>
-                                            <span class="level-text">85%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <div class="skill-icon">⚡</div>
-                                    <div class="skill-info">
-                                        <h4>C/C++</h4>
-                                        <div class="skill-level">
-                                            <div class="level-bar">
-                                                <div class="level-fill" data-level="75"></div>
-                                            </div>
-                                            <span class="level-text">75%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <div class="skill-icon">🌐</div>
-                                    <div class="skill-info">
-                                        <h4>JavaScript</h4>
-                                        <div class="skill-level">
-                                            <div class="level-bar">
-                                                <div class="level-fill" data-level="80"></div>
-                                            </div>
-                                            <span class="level-text">80%</span>
-                                        </div>
-                                    </div>
+                                    <span class="level-text">80%</span>
                                 </div>
                             </div>
                         </div>
                         
-                        <!-- Frameworks & Technologies -->
-                        <div class="skill-category">
-                            <div class="category-header">
-                                <div class="category-icon">
-                                    <i class="fas fa-layer-group"></i>
-                                </div>
-                                <h3>Frameworks & Technologies</h3>
-                            </div>
-                            <div class="frameworks-grid">
-                                <div class="framework-card">
-                                    <div class="framework-icon">
-                                        <i class="fab fa-flutter"></i>
+                        <div class="skill-item">
+                            <div class="skill-icon">⚡</div>
+                            <div class="skill-info">
+                                <h4>PHP</h4>
+                                <div class="skill-level">
+                                    <div class="level-bar">
+                                        <div class="level-fill" data-level="85"></div>
                                     </div>
-                                    <h4>Flutter</h4>
-                                    <div class="proficiency expert"></div>
-                                    <div class="proficiency-text">Expert</div>
-                                </div>
-                                <div class="framework-card">
-                                    <div class="framework-icon">
-                                        <i class="fab fa-laravel"></i>
-                                    </div>
-                                    <h4>Laravel</h4>
-                                    <div class="proficiency advanced"></div>
-                                    <div class="proficiency-text">Advanced</div>
-                                </div>
-                                <div class="framework-card">
-                                    <div class="framework-icon">
-                                        <i class="fab fa-react"></i>
-                                    </div>
-                                    <h4>React</h4>
-                                    <div class="proficiency intermediate"></div>
-                                    <div class="proficiency-text">Intermediate</div>
-                                </div>
-                                <div class="framework-card">
-                                    <div class="framework-icon">
-                                        <i class="fab fa-node-js"></i>
-                                    </div>
-                                    <h4>Node.js</h4>
-                                    <div class="proficiency intermediate"></div>
-                                    <div class="proficiency-text">Intermediate</div>
-                                </div>
-                                <div class="framework-card">
-                                    <div class="framework-icon">
-                                        <i class="fab fa-bootstrap"></i>
-                                    </div>
-                                    <h4>Bootstrap</h4>
-                                    <div class="proficiency advanced"></div>
-                                    <div class="proficiency-text">Advanced</div>
-                                </div>
-                                <div class="framework-card">
-                                    <div class="framework-icon">
-                                        <i class="fab fa-html5"></i>
-                                    </div>
-                                    <h4>HTML/CSS</h4>
-                                    <div class="proficiency expert"></div>
-                                    <div class="proficiency-text">Expert</div>
+                                    <span class="level-text">85%</span>
                                 </div>
                             </div>
                         </div>
                         
-                        <!-- Specializations -->
-                        <div class="skill-category">
-                            <div class="category-header">
-                                <div class="category-icon">
-                                    <i class="fas fa-brain"></i>
-                                </div>
-                                <h3>Specializations</h3>
-                            </div>
-                            <div class="specializations-list">
-                                <div class="specialization-item">
-                                    <div class="spec-header">
-                                        <div class="spec-icon">
-                                            <i class="fas fa-robot"></i>
-                                        </div>
-                                        <h4>Machine Learning & AI</h4>
-                                        <div class="spec-rating">
-                                            <div class="star active"></div>
-                                            <div class="star active"></div>
-                                            <div class="star active"></div>
-                                            <div class="star active"></div>
-                                            <div class="star"></div>
-                                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">☕</div>
+                            <div class="skill-info">
+                                <h4>Java</h4>
+                                <div class="skill-level">
+                                    <div class="level-bar">
+                                        <div class="level-fill" data-level="78"></div>
                                     </div>
-                                    <div class="spec-tags">
-                                        <span>TensorFlow</span>
-                                        <span>Scikit-learn</span>
-                                        <span>Keras</span>
-                                        <span>PyTorch</span>
-                                    </div>
-                                </div>
-                                <div class="specialization-item">
-                                    <div class="spec-header">
-                                        <div class="spec-icon">
-                                            <i class="fas fa-chart-bar"></i>
-                                        </div>
-                                        <h4>Data Science & Analytics</h4>
-                                        <div class="spec-rating">
-                                            <div class="star active"></div>
-                                            <div class="star active"></div>
-                                            <div class="star active"></div>
-                                            <div class="star active"></div>
-                                            <div class="star active"></div>
-                                        </div>
-                                    </div>
-                                    <div class="spec-tags">
-                                        <span>Pandas</span>
-                                        <span>NumPy</span>
-                                        <span>Matplotlib</span>
-                                        <span>Tableau</span>
-                                    </div>
-                                </div>
-                                <div class="specialization-item">
-                                    <div class="spec-header">
-                                        <div class="spec-icon">
-                                            <i class="fas fa-mobile-alt"></i>
-                                        </div>
-                                        <h4>Mobile Development</h4>
-                                        <div class="spec-rating">
-                                            <div class="star active"></div>
-                                            <div class="star active"></div>
-                                            <div class="star active"></div>
-                                            <div class="star active"></div>
-                                            <div class="star"></div>
-                                        </div>
-                                    </div>
-                                    <div class="spec-tags">
-                                        <span>Flutter</span>
-                                        <span>Dart</span>
-                                        <span>Firebase</span>
-                                        <span>REST API</span>
-                                    </div>
-                                </div>
-                                <div class="specialization-item">
-                                    <div class="spec-header">
-                                        <div class="spec-icon">
-                                            <i class="fas fa-database"></i>
-                                        </div>
-                                        <h4>Database Management</h4>
-                                        <div class="spec-rating">
-                                            <div class="star active"></div>
-                                            <div class="star active"></div>
-                                            <div class="star active"></div>
-                                            <div class="star active"></div>
-                                            <div class="star"></div>
-                                        </div>
-                                    </div>
-                                    <div class="spec-tags">
-                                        <span>MySQL</span>
-                                        <span>PostgreSQL</span>
-                                        <span>MongoDB</span>
-                                        <span>SQL Server</span>
-                                    </div>
+                                    <span class="level-text">78%</span>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    
-                    <!-- Skills Visualization -->
-                    <div class="skills-visualization">
-                        <div class="viz-header">
-                            <h3>Technical Proficiency Overview</h3>
-                            <p>Interactive visualization of my skill levels across different technologies</p>
-                        </div>
-                        <div class="skill-radar" id="skillRadar">
-                            <canvas width="400" height="400"></canvas>
-                            <div class="radar-labels">
-                                <div class="radar-label" style="--angle: 0deg;">Python</div>
-                                <div class="radar-label" style="--angle: 45deg;">Java</div>
-                                <div class="radar-label" style="--angle: 90deg;">Flutter</div>
-                                <div class="radar-label" style="--angle: 135deg;">ML/AI</div>
-                                <div class="radar-label" style="--angle: 180deg;">Data Science</div>
-                                <div class="radar-label" style="--angle: 225deg;">Web Dev</div>
-                                <div class="radar-label" style="--angle: 270deg;">Mobile Dev</div>
-                                <div class="radar-label" style="--angle: 315deg;">Database</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Achievements Section -->
-        <section id="achievements" class="achievements-section">
-            <div class="container">
-                <div class="section-header">
-                    <div class="section-badge">
-                        <i class="fas fa-trophy"></i>
-                        <span>Achievements</span>
-                    </div>
-                    <h2 class="section-title">
-                        <span class="title-word">Awards</span>
-                        <span class="title-word">&</span>
-                        <span class="title-word highlight">Recognition</span>
-                    </h2>
-                    <div class="section-subtitle-container">
-                        <div class="subtitle-crown">
-                            <i class="fas fa-crown"></i>
-                            <div class="crown-gems">
-                                <div class="gem"></div>
-                                <div class="gem"></div>
-                                <div class="gem"></div>
-                            </div>
-                        </div>
-                        <p class="section-subtitle">
-                            Recognitions and achievements that highlight my dedication and excellence
-                        </p>
-                        <div class="subtitle-crown">
-                            <i class="fas fa-crown"></i>
-                            <div class="crown-gems">
-                                <div class="gem"></div>
-                                <div class="gem"></div>
-                                <div class="gem"></div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">🎯</div>
+                            <div class="skill-info">
+                                <h4>Dart</h4>
+                                <div class="skill-level">
+                                    <div class="level-bar">
+                                        <div class="level-fill" data-level="88"></div>
+                                    </div>
+                                    <span class="level-text">88%</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="achievements-grid">
-                    <!-- Featured Achievement -->
-                    <div class="achievement-card featured">
-                        <div class="achievement-icon">
-                            <i class="fas fa-globe-asia"></i>
+                <div class="skill-category">
+                    <h3>Frameworks & Libraries</h3>
+                    <div class="frameworks-grid">
+                        <div class="framework-card">
+                            <div class="framework-icon">🔥</div>
+                            <h4>Laravel</h4>
+                            <div class="proficiency expert"></div>
                         </div>
-                        <div class="achievement-content">
-                            <div class="achievement-year">2024</div>
-                            <h3>Future Leaders Competition Japan</h3>
-                            <h4>Top 151 Delegates</h4>
-                            <p>
-                                Selected as one of the top 151 delegates from thousands of applicants 
-                                across Asia-Pacific region for the prestigious Future Leaders Competition 
-                                in Japan, recognizing leadership potential and academic excellence.
-                            </p>
-                            <div class="achievement-stats">
-                                <div class="stat">
-                                    <span class="stat-number">151</span>
-                                    <span class="stat-label">Top Delegates</span>
-                                </div>
-                                <div class="stat">
-                                    <span class="stat-number">5000+</span>
-                                    <span class="stat-label">Applicants</span>
-                                </div>
-                            </div>
-                            <div class="achievement-badge">International Recognition</div>
+                        <div class="framework-card">
+                            <div class="framework-icon">📱</div>
+                            <h4>Flutter</h4>
+                            <div class="proficiency expert"></div>
                         </div>
-                        <div class="achievement-glow"></div>
-                    </div>
-                    
-                    <!-- GEMASTIK Achievement -->
-                    <div class="achievement-card">
-                        <div class="achievement-icon">
-                            <i class="fas fa-code"></i>
+                        <div class="framework-card">
+                            <div class="framework-icon">✨</div>
+                            <h4>Flask</h4>
+                            <div class="proficiency advanced"></div>
                         </div>
-                        <div class="achievement-content">
-                            <div class="achievement-year">2023</div>
-                            <h3>GEMASTIK XVI</h3>
-                            <h4>National Selection Participant</h4>
-                            <p>
-                                Participated in GEMASTIK (Pagelaran Mahasiswa Nasional Bidang TIK), 
-                                Indonesia's premier national ICT competition, competing in software 
-                                development category at the national level.
-                            </p>
-                            <div class="achievement-stats">
-                                <div class="stat">
-                                    <span class="stat-number">16</span>
-                                    <span class="stat-label">Edition</span>
-                                </div>
-                                <div class="stat">
-                                    <span class="stat-number">National</span>
-                                    <span class="stat-label">Level</span>
-                                </div>
-                            </div>
-                            <div class="achievement-badge">National Competition</div>
-                        </div>
-                        <div class="achievement-glow"></div>
-                    </div>
-                    
-                    <!-- Leadership Achievement -->
-                    <div class="achievement-card">
-                        <div class="achievement-icon">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <div class="achievement-content">
-                            <div class="achievement-year">2024 - Present</div>
-                            <h3>Head of Science & Technology Department</h3>
-                            <h4>Student Organization Leadership</h4>
-                            <p>
-                                Leading the Science & Technology Department, organizing tech events, 
-                                workshops, and initiatives to enhance the technical skills of fellow 
-                                students and promote innovation within the campus community.
-                            </p>
-                            <div class="achievement-stats">
-                                <div class="stat">
-                                    <span class="stat-number">200+</span>
-                                    <span class="stat-label">Students Impacted</span>
-                                </div>
-                                <div class="stat">
-                                    <span class="stat-number">10+</span>
-                                    <span class="stat-label">Events Organized</span>
-                                </div>
-                            </div>
-                            <div class="achievement-badge">Leadership Excellence</div>
-                        </div>
-                        <div class="achievement-glow"></div>
-                    </div>
-                    
-                    <!-- Academic Achievement -->
-                    <div class="achievement-card">
-                        <div class="achievement-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <div class="achievement-content">
-                            <div class="achievement-year">2023 - 2024</div>
-                            <h3>Program Cinta Almamater (PCA)</h3>
-                            <h4>Active Member</h4>
-                            <p>
-                                Active participation in the Program Cinta Almamater, contributing to 
-                                campus development initiatives and community service projects while 
-                                maintaining academic excellence and leadership responsibilities.
-                            </p>
-                            <div class="achievement-stats">
-                                <div class="stat">
-                                    <span class="stat-number">1</span>
-                                    <span class="stat-label">Year Duration</span>
-                                </div>
-                                <div class="stat">
-                                    <span class="stat-number">5+</span>
-                                    <span class="stat-label">Projects</span>
-                                </div>
-                            </div>
-                            <div class="achievement-badge">Community Service</div>
-                        </div>
-                        <div class="achievement-glow"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section">
-            <div class="container">
-                <div class="section-header">
-                    <div class="section-badge">
-                        <i class="fas fa-envelope"></i>
-                        <span>Contact</span>
-                    </div>
-                    <h2 class="section-title">
-                        <span class="title-word">Let's</span>
-                        <span class="title-word highlight">Connect</span>
-                    </h2>
-                    <div class="section-subtitle-container">
-                        <div class="subtitle-network">
-                            <div class="network-node"></div>
-                            <div class="network-line"></div>
-                            <div class="network-node"></div>
-                            <div class="network-line"></div>
-                            <div class="network-node"></div>
-                        </div>
-                        <p class="section-subtitle">
-                            Ready to collaborate or discuss opportunities? I'd love to hear from you!
-                        </p>
-                        <div class="subtitle-network">
-                            <div class="network-node"></div>
-                            <div class="network-line"></div>
-                            <div class="network-node"></div>
-                            <div class="network-line"></div>
-                            <div class="network-node"></div>
+                        <div class="framework-card">
+                            <div class="framework-icon">🧠</div>
+                            <h4>TensorFlow</h4>
+                            <div class="proficiency intermediate"></div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <div class="contact-card">
-                            <div class="card-header">
-                                <h3>Get In Touch</h3>
-                                <p>
-                                    I'm always open to discussing new opportunities, 
-                                    collaborations, or just having a chat about technology and innovation.
-                                </p>
+                <div class="skill-category">
+                    <h3>Data & Analytics</h3>
+                    <div class="data-skills">
+                        <div class="data-skill">
+                            <div class="skill-header">
+                                <div class="skill-icon">📊</div>
+                                <h4>Tableau</h4>
+                                <span class="expertise-badge expert">Intermediate</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="78"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="data-skill">
+                            <div class="skill-header">
+                                <div class="skill-icon">🤖</div>
+                                <h4>Machine Learning</h4>
+                                <span class="expertise-badge advanced">Intermediate</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="79"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="data-skill">
+                            <div class="skill-header">
+                                <div class="skill-icon">👁️</div>
+                                <h4>Computer Vision</h4>
+                                <span class="expertise-badge advanced">Intermediate</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-subtitle">Ready to collaborate on your next project</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3>Get in Touch</h3>
+                        <p>I'm always excited to discuss new opportunities and innovative projects.</p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">📧</div>
+                                <div class="method-info">
+                                    <h4>Email</h4>
+                                    <a href="mailto:reinaldyhutapea@gmail.com">reinaldyhutapea@gmail.com</a>
+                                </div>
                             </div>
                             
-                            <div class="contact-methods">
-                                <div class="contact-method">
-                                    <div class="method-icon">
-                                        <i class="fas fa-envelope"></i>
-                                    </div>
-                                    <div class="method-info">
-                                        <h4>Email</h4>
-                                        <a href="mailto:reinaldyhutapea@gmail.com">reinaldyhutapea@gmail.com</a>
-                                        <span class="method-note">Best for detailed discussions</span>
-                                    </div>
-                                    <div class="method-status online"></div>
+                            <div class="contact-method">
+                                <div class="method-icon">📱</div>
+                                <div class="method-info">
+                                    <h4>Phone</h4>
+                                    <a href="tel:+6282246933771">+62 822-4693-3771</a>
                                 </div>
-                                
-                                <div class="contact-method">
-                                    <div class="method-icon">
-                                        <i class="fas fa-phone"></i>
-                                    </div>
-                                    <div class="method-info">
-                                        <h4>Phone</h4>
-                                        <a href="tel:+6282246933771">+62 822-4693-3771</a>
-                                        <span class="method-note">Available during business hours</span>
-                                    </div>
-                                    <div class="method-status available"></div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">💼</div>
+                                <div class="method-info">
+                                    <h4>LinkedIn</h4>
+                                    <a href="https://www.linkedin.com/in/reinaldy-hutapea-3907b0246/" target="_blank">Connect with me</a>
                                 </div>
-                                
-                                <div class="contact-method">
-                                    <div class="method-icon">
-                                        <i class="fab fa-linkedin"></i>
-                                    </div>
-                                    <div class="method-info">
-                                        <h4>LinkedIn</h4>
-                                        <a href="https://linkedin.com/in/reinaldy-hutapea" target="_blank" rel="noopener noreferrer">
-                                            linkedin.com/in/reinaldy-hutapea
-                                        </a>
-                                        <span class="method-note">Professional networking</span>
-                                    </div>
-                                    <div class="method-status active"></div>
-                                </div>
-                                
-                                <div class="contact-method">
-                                    <div class="method-icon">
-                                        <i class="fab fa-github"></i>
-                                    </div>
-                                    <div class="method-info">
-                                        <h4>GitHub</h4>
-                                        <a href="https://github.com/reinaldy" target="_blank" rel="noopener noreferrer">
-                                            github.com/reinaldy
-                                        </a>
-                                        <span class="method-note">Code repositories & projects</span>
-                                    </div>
-                                    <div class="method-status active"></div>
-                                </div>
-                                
-                                <div class="contact-method">
-                                    <div class="method-icon">
-                                        <i class="fas fa-map-marker-alt"></i>
-                                    </div>
-                                    <div class="method-info">
-                                        <h4>Location</h4>
-                                        <span>Toba, North Sumatra, Indonesia</span>
-                                        <span class="method-note">Open to remote opportunities</span>
-                                    </div>
-                                    <div class="method-status available"></div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">📍</div>
+                                <div class="method-info">
+                                    <h4>Location</h4>
+                                    <span>Toba, North Sumatra, Indonesia</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="contact-form-container">
-                        <form id="contactForm" class="contact-form">
-                            <div class="form-header">
-                                <h3>Send a Message</h3>
-                                <p>Fill out the form below and I'll get back to you as soon as possible.</p>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-header">
+                            <h3>Send a Message</h3>
+                            <p>Let's start a conversation</p>
+                        </div>
+                        
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                                <div class="input-line"></div>
                             </div>
                             
-                            <div class="form-grid">
-                                <div class="form-group">
-                                    <label for="name">Full Name *</label>
-                                    <input type="text" id="name" name="name" required>
-                                    <div class="input-line"></div>
-                                    <i class="fas fa-user input-icon"></i>
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="email">Email Address *</label>
-                                    <input type="email" id="email" name="email" required>
-                                    <div class="input-line"></div>
-                                    <i class="fas fa-envelope input-icon"></i>
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="phone">Phone Number</label>
-                                    <input type="tel" id="phone" name="phone">
-                                    <div class="input-line"></div>
-                                    <i class="fas fa-phone input-icon"></i>
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="subject">Subject *</label>
-                                    <select id="subject" name="subject" required>
-                                        <option value="">Select a subject</option>
-                                        <option value="collaboration">Collaboration Opportunity</option>
-                                        <option value="job">Job Opportunity</option>
-                                        <option value="project">Project Discussion</option>
-                                        <option value="consultation">Technical Consultation</option>
-                                        <option value="other">Other</option>
-                                    </select>
-                                    <div class="input-line"></div>
-                                    <i class="fas fa-tag input-icon"></i>
-                                </div>
-                                
-                                <div class="form-group full-width">
-                                    <label for="message">Message *</label>
-                                    <textarea id="message" name="message" rows="6" required 
-                                              placeholder="Tell me about your project, opportunity, or how I can help you..."></textarea>
-                                    <div class="input-line"></div>
-                                    <i class="fas fa-comment input-icon"></i>
-                                </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                                <div class="input-line"></div>
                             </div>
                             
-                            <div class="form-actions">
-                                <button type="submit" class="btn btn-primary btn-full">
-                                    <span class="btn-text">Send Message</span>
-                                    <i class="fas fa-paper-plane btn-icon"></i>
-                                    <div class="btn-ripple"></div>
-                                    <div class="btn-glow"></div>
-                                </button>
+                            <div class="form-group full-width">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                                <div class="input-line"></div>
                             </div>
-                        </form>
-                    </div>
+                            
+                            <div class="form-group full-width">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                                <div class="input-line"></div>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span class="btn-text">Send Message</span>
+                            <div class="btn-icon">🚀</div>
+                            <div class="btn-ripple"></div>
+                        </button>
+                    </form>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-brand">
-                    <div class="footer-logo">
-                        <div class="logo-icon">RH</div>
-                    </div>
-                    <div class="footer-text">
-                        <h4>Reinaldy Hutapea</h4>
-                        <p>
-                            Information Systems Student passionate about AI/ML, Data Science, 
-                            and Full-Stack Development. Always eager to learn and create 
-                            innovative solutions.
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="footer-links">
-                    <div class="link-group">
-                        <h5>Quick Links</h5>
-                        <a href="#home">Home</a>
-                        <a href="#about">About</a>
-                        <a href="#education">Education</a>
-                        <a href="#experience">Experience</a>
-                        <a href="#projects">Projects</a>
-                        <a href="#skills">Skills</a>
-                        <a href="#contact">Contact</a>
-                    </div>
-                    
-                    <div class="link-group">
-                        <h5>Services</h5>
-                        <a href="#">AI/ML Development</a>
-                        <a href="#">Data Science</a>
-                        <a href="#">Mobile Development</a>
-                        <a href="#">Web Development</a>
-                        <a href="#">Consultation</a>
-                        <a href="#">Technical Writing</a>
-                    </div>
-                    
-                    <div class="link-group">
-                        <h5>Connect</h5>
-                        <a href="https://linkedin.com/in/reinaldy-hutapea" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                        <a href="https://github.com/reinaldy" target="_blank" rel="noopener noreferrer">GitHub</a>
-                        <a href="mailto:reinaldyhutapea@gmail.com">Email</a>
-                        <a href="tel:+6282246933771">Phone</a>
-                        <a href="#" onclick="downloadCV()">Download CV</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <div class="footer-copyright">
-                    <p>&copy; 2024 Reinaldy Hutapea. All rights reserved.</p>
-                    <p>Built with passion and modern web technologies.</p>
-                </div>
-                
-                <div class="footer-social">
-                    <a href="https://linkedin.com/in/reinaldy-hutapea" class="social-icon" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://github.com/reinaldy" class="social-icon" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="mailto:reinaldyhutapea@gmail.com" class="social-icon">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a href="tel:+6282246933771" class="social-icon">
-                        <i class="fas fa-phone"></i>
-                    </a>
-                </div>
+                <p>&copy; 2025 Reinaldy Hutapea. All rights reserved.</p>
+                <!-- <p>Built with passion and attention to detail</p> -->
             </div>
         </div>
     </footer>
 
     <!-- Scripts -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
-    
-    <!-- CSS Animations -->
-    <style>
-        @keyframes ripple {
-            to {
-                transform: scale(4);
-                opacity: 0;
-            }
-        }
-        
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-    </style>
 </body>
 </html>
